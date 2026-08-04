@@ -38,7 +38,7 @@ jobs:
             key: ${{ secrets.VM_PRIVATE_KEY }}
             port: ${{ secrets.VM_PORT }}
             script: |
-                cd /home/ec2-user/devops/gocart-v2/gocart
+                cd /home/ec2-user/devops/gocart-v2/gocartg
                 git pull origin main
                 sudo docker compose down --remove-orphans
                 sudo docker compose up -d --build
